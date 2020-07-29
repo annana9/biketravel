@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+[class*="col-"] {
+    float: left;
+}
+
+.row:after,
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container1:after,
+.container1:before,
+.container3:after,
+.container3:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container1 {
+    margin: 50px auto;
+}
+
+header {
+    background-color: rgb(0, 26, 0);
+    position: relative;
+}
+
+header p {
+    display: inline;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: rgb(230, 184, 0);
+    margin: 5px auto;
+    font-weight: 700;
+}
+
+.container1,
+.container3 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+}
+
+header {
+    float: none;
+    width: 100%;
+}
+
+header ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+header li {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+header a {
+    display: block;
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: rgb(230, 184, 0);
+}
+
+.hero {
+    background-image: url(http://images.unsplash.com/photo-1488401318902-f7feae66db20?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9&s=86e4b00ca2abd8de4a17f8e83a730c77);
+    height: 800px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.description {
+    float: right;
+    position: absolute;
+    font-size: 20px;
+    top: 60%;
+    right: 0;
+    background-color: rgba(100, 120, 100, 0.4);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.icons {
+    margin: 80px 15%;
+    text-align: center;
+}
+
+.icons .fa {
+    min-width: 100px;
+    padding: 20px;
+    font-size: 60px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 26, 0);
+}
+
+.hover .hov:hover i {
+    background-color: rgb(230, 184, 0);
+    transition: ease-out 0.4s;
+}
+
+.hover .hov:hover h3 {
+    color: rgb(230, 184, 0);
+}
+
+.container2 {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.gallery [class*="col-"] {
+    padding: 0;
+    position: relative;
+}
+
+.gallery [class*="col-"]:hover .cover {
+    display: block;
+}
+
+.gallery [class*="col-"]:hover img {
+    background: rgba(100, 120, 100, 0.4);
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.cover {
+    margin: 0 auto;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(100, 120, 100, 0.4);
+}
+
+.cover i {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.numbers {
+    margin: 80px 15%;
+    text-align: center;
+}
+
+.numbers h2 {
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.numbers p {
+    color: rgb(230, 184, 0);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Indie Flower';
+}
+
+.promo {
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 49, 13);
+}
+
+.promo h1 {
+    position: absolute;
+    margin: 20px 10%;
+    ;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.promo li {
+    width: 50%;
+    float: left;
+    padding: 5% 50px 20px 20px;
+}
+
+.promo img {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.agent {
+    text-align: center;
+}
+
+.agent > div:hover .agent-name {
+    background: rgba(100, 120, 100, 0.6);
+}
+
+.agent > div:hover .agent-name p {
+    display: block;
+}
+
+.agent-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s background;
+}
+
+.agent-name p {
+    margin: 15px 0 0 0;
+    color: rgb(255, 255, 255);
+    display: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.agent > div {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    line-height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.agents-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.agents-list {
+    margin: 80px 12%;
+    text-align: center;
+}
+
+.contact {
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 49, 13);
+}
+
+.contact h1,
+h4 {
+    float: left;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.contact .line {
+    float: left;
+    margin: 50px 0 0 20px;
+    width: 15%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contact p {
+    padding: 20px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.site-footer {
+    background-color: rgb(0, 26, 0);
+}
+
+.site-footer p {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: left;
+}
+
+.social {
+    padding: 20px;
+}
+
+.social i {
+    margin-right: 3px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: rgb(230, 184, 0);
+    text-align: center;
+    line-height: 40px;
+}
+
+
+@media (max-width: 768px) {
+    header ul {
+        float: none;
+        width: 100%;
+    }
+    header li {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .gallery img {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .gallery p {
+        font-size: 26px;
+    }
+    .numbers p {
+        font-size: 23px;
+    }
+    .hero {
+        width: 100%;
+    }
+    .promo h1 {
+        padding: 0 auto;
+    }
+    .promo li {
+        padding: 16% 20px 5px 10px;
+    }
+    .agents-list {
+        margin: 80px 30%;
+    }
+    .contact h1,
+    h4 {
+        float: none;
+        text-align: center;
+    }
+    .contact .line {
+        margin: 0 auto;
+        float: none;
+        width: 75%;
+        display: block;
+        
+    }
+}
